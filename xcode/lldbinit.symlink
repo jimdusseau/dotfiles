@@ -1,4 +1,4 @@
 #http://nshipster.com/reader-submissions-new-years-2013/
 command regex rd 's/^[[:space:]]*$/po [[[UIApplication sharedApplication] keyWindow] recursiveDescription]/' 's/^(.+)$/po [%1 recursiveDescription]/'
 
-command script import /usr/local/Cellar/chisel/1.1.0/libexec/fblldb.py
+command script import /usr/local/opt/chisel/libexec/fblldb.py
