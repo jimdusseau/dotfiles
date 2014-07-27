@@ -31,7 +31,6 @@
         ui = true
 [core]
         excludesfile = ~/.gitignore
-        editor = atom
 [apply]
         whitespace = nowarn
 [mergetool]
