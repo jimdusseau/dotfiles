@@ -1,35 +1,18 @@
 'editor':
+  'fontSize': 16
   'showIndentGuide': true
-  'fontFamily': 'Menlo'
-  'fontSize': 15
+  'softWrap': true
 'core':
-  'excludeVcsIgnoredPaths': true
-  'ignoredNames': [
-    '.bundle'
-    '.git'
-    'log'
-    'repositories'
-    'tmp'
-    'vendor'
-  ]
   'themes': [
-    'unity-ui'
-    'glacier-syntax'
+    'atom-dark-ui'
+    'atom-dark-syntax'
   ]
-  'hideGitIgnoredFiles': true
-  'disabledPackages': [
-    'background-tips'
-    'exception-reporting'
-    'metrics'
+  'ignoredNames': [
+    '.git'
+    '.svn'
+    '.DS_Store'
   ]
-'spell-check':
-  'grammars': [
-    'text.plain'
-    'source.gfm'
-    'text.git-commit'
-  ]
-'welcome':
-  'showOnStartup': false
 'release-notes':
   'viewedVersion': '0.89.0'
-'tree-view': {}
+'welcome':
+  'showOnStartup': false
