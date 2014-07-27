@@ -16,3 +16,7 @@
   'viewedVersion': '0.89.0'
 'welcome':
   'showOnStartup': false
+'exception-reporting':
+  'userId': '2c7b85a0-c9be-c3f8-51de-93f07078ab07'
+'metrics':
+  'userId': '44ba28613c97355c4f02bf3de41d194a1a27d192'
