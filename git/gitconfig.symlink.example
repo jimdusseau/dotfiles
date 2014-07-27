@@ -20,7 +20,6 @@
         hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
         type = cat-file -t
         dump = cat-file -p
-        clearindex = 
         ours   = "!f() { git checkout --ours \"$@\" && git add \"$@\"; }; f"
         theirs = "!f() { git checkout --theirs \"$@\" && git add \"$@\"; }; f"
         undo = reset --soft HEAD^
@@ -32,7 +31,7 @@
         ui = true
 [core]
         excludesfile = ~/.gitignore
-        editor = vim
+        editor = atom
 [apply]
         whitespace = nowarn
 [mergetool]
