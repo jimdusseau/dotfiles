@@ -20,6 +20,7 @@
         hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
         type = cat-file -t
         dump = cat-file -p
+        clearindex =
         ours   = "!f() { git checkout --ours \"$@\" && git add \"$@\"; }; f"
         theirs = "!f() { git checkout --theirs \"$@\" && git add \"$@\"; }; f"
         undo = reset --soft HEAD^
@@ -33,9 +34,18 @@
         excludesfile = ~/.gitignore
 [apply]
         whitespace = nowarn
-[mergetool]
-        keepBackup = false
+[merge]
+        tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+        cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[diff]
+        tool = Kaleidoscope
 [difftool]
+        prompt = false
+[mergetool "Kaleidoscope"]
+        cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+        trustExitCode = true
+[mergetool]
         prompt = false
 [help]
         autocorrect = 1
@@ -45,3 +55,9 @@
         #
         # Setting to git 2.0 default to surpress warning message
         default = simple
+[difftool "sourcetree"]
+	cmd = /usr/local/bin/ksdiff -- \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /usr/local/bin/ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" \"$REMOTE\"
+	trustExitCode = true
