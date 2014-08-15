@@ -1,0 +1,3 @@
+#!/bin/sh
+
+git stash show --format=full stash\@\{${@}\}
