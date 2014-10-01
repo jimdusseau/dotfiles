@@ -2,10 +2,11 @@
   'fontSize': 16
   'showIndentGuide': true
   'softWrap': true
+  'invisibles': {}
 'core':
   'themes': [
-    'atom-dark-ui'
-    'atom-dark-syntax'
+    'atom-light-ui'
+    'atom-light-syntax'
   ]
   'ignoredNames': [
     '.git'
