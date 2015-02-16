@@ -2,3 +2,6 @@
 command regex rd 's/^[[:space:]]*$/po [[[UIApplication sharedApplication] keyWindow] recursiveDescription]/' 's/^(.+)$/po [%1 recursiveDescription]/'
 
 command script import /usr/local/opt/chisel/libexec/fblldb.py
+
+#https://github.com/liyanage/lldb_utilities
+command script import ~/Dropbox/devenv/lldb/lldb_utilities/lldb_utilities.py
