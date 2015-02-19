@@ -1,25 +1,25 @@
-'editor':
-  'fontSize': 16
-  'showIndentGuide': true
-  'softWrap': true
-  'invisibles': {}
-'core':
-  'themes': [
-    'atom-light-ui'
-    'atom-light-syntax'
-  ]
-  'ignoredNames': [
-    '.git'
-    '.svn'
-    '.DS_Store'
-  ]
-'release-notes':
-  'viewedVersion': '0.89.0'
-'welcome':
-  'showOnStartup': false
-'exception-reporting':
-  'userId': '2c7b85a0-c9be-c3f8-51de-93f07078ab07'
-'metrics':
-  'userId': '44ba28613c97355c4f02bf3de41d194a1a27d192'
-'whitespace':
-  'removeTrailingWhitespace': false
+"*":
+  editor:
+    showIndentGuide: true
+    softWrap: true
+    invisibles: {}
+  core:
+    themes: [
+      "one-light-ui"
+      "solarized-light-syntax"
+    ]
+    ignoredNames: [
+      ".git"
+      ".svn"
+      ".DS_Store"
+    ]
+  "release-notes":
+    viewedVersion: "0.89.0"
+  welcome:
+    showOnStartup: false
+  "exception-reporting":
+    userId: "2c7b85a0-c9be-c3f8-51de-93f07078ab07"
+  metrics:
+    userId: "44ba28613c97355c4f02bf3de41d194a1a27d192"
+  whitespace:
+    removeTrailingWhitespace: false
