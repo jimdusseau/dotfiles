@@ -1,0 +1,4 @@
+'atom-text-editor':
+  'ctrl-k': 'editor:delete-to-end-of-line'
+  'home': 'core:move-to-top'
+  'end': 'core:move-to-bottom'
