@@ -21,7 +21,4 @@ then
 
 fi
 
-# Install homebrew packages
-brew install grc coreutils spark chisel
-
 exit 0
