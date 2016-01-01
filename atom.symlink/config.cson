@@ -1,25 +1,37 @@
 "*":
   editor:
     showIndentGuide: true
-    softWrap: true
+    fontFamily: "Menlo"
     invisibles: {}
+    fontSize: 15
+    softWrapAtPreferredLineLength: true
   core:
-    themes: [
-      "one-light-ui"
-      "solarized-light-syntax"
-    ]
     ignoredNames: [
+      ".bundle"
       ".git"
-      ".svn"
-      ".DS_Store"
+      "log"
+      "repositories"
+      "tmp"
+      "vendor"
     ]
-  "release-notes":
-    viewedVersion: "0.89.0"
+    themes: [
+      "unity-ui"
+      "glacier-syntax"
+    ]
+    hideGitIgnoredFiles: true
+    disabledPackages: [
+      "background-tips"
+      "exception-reporting"
+      "metrics"
+    ]
+    followSymlinks: false
+  "spell-check":
+    grammars: [
+      "text.plain"
+      "source.gfm"
+      "text.git-commit"
+    ]
   welcome:
     showOnStartup: false
-  "exception-reporting":
-    userId: "2c7b85a0-c9be-c3f8-51de-93f07078ab07"
-  metrics:
-    userId: "44ba28613c97355c4f02bf3de41d194a1a27d192"
-  whitespace:
-    removeTrailingWhitespace: false
+  "release-notes":
+    viewedVersion: "0.89.0"
